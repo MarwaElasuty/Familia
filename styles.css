@@ -1034,6 +1034,7 @@ button[name="contact-us"] {
     width: 100%;
     background-color: white;
     padding: 35px;
+    justify-content: space-evenly;
     
 }
 
@@ -1046,7 +1047,7 @@ button[name="contact-us"] {
 }
 
 .footer>div {
-    width: 100%;
+    /* width: 49%; */
     padding-bottom: 15px;
     padding: 25px;
 }
@@ -1057,6 +1058,11 @@ button[name="contact-us"] {
     padding-bottom: 15px;
 }
 
+.copy-rights{
+    position: absolute;
+    display: flex;
+    top: 594px;
+}
 
 
 /* footer media query */
@@ -1066,7 +1072,9 @@ button[name="contact-us"] {
         width: 100%;
 
     }
-
+    .get-in-touch-main-div{
+        width: 100%;
+    }
     .consulting {
         display: flex;
         justify-content: space-evenly;
@@ -1087,10 +1095,15 @@ button[name="contact-us"] {
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .footer {
+        padding-top: 15px;
         width: 100%;
-
+        top: 278px;
+        right: 0;
+        flex-wrap: wrap;
     }
-
+    .get-in-touch-main-div{
+        width: 100%;
+    }
     .consulting {
         display: flex;
         justify-content: space-evenly;
@@ -1110,8 +1123,14 @@ button[name="contact-us"] {
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     .footer {
+        padding-top: 15px;
         width: 100%;
-
+        top: 278px;
+        right: 0;
+        flex-wrap: wrap;
+    }
+    .get-in-touch-main-div{
+        width: 100%;
     }
 
     .consulting {
@@ -1136,7 +1155,12 @@ button[name="contact-us"] {
         padding-top: 15px;
         width: 100%;
         top: 278px;
-        right: 0
+        right: 0;
+        flex-wrap: wrap;
+    }
+
+    .get-in-touch-main-div{
+        width: 100%;
     }
 
     .comp {
@@ -1160,14 +1184,12 @@ button[name="contact-us"] {
     button[name="contact-us"] {
         font-size: 20px;
     }
+
+
 }
 
-.rights{
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 594px;
-}
+
+
 
 .social-media-icons{
     display: flex;
